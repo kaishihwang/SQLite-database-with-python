@@ -1,5 +1,4 @@
 # SQLite-database-with-python
-# SQLite-database-with-python
 
 ## Understand the datasets
 
