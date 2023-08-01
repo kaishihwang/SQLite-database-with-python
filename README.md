@@ -1,12 +1,9 @@
-# SQLite database with Python
+# Report: Analysis of Chicago Crime Data
 
-## Understand the datasets
+## Introduction:
+In this report, I analyze the Chicago crime data stored in a SQLite database. The dataset includes information about crimes recorded in Chicago, census data, and public schools. The analysis aims to provide insights into crime patterns, demographics, and school safety in different community areas of Chicago.
 
-Using this Python notebook will:
-
-1.  Understand three Chicago datasets
-2.  Load the three datasets into three tables in a SQLIte database
-3.  Execute SQL queries to answer assignment questions
+## Understand the datasets:
 
 Using three datasets that are available on the city of Chicago's Data Portal:
 
@@ -14,23 +11,40 @@ Using three datasets that are available on the city of Chicago's Data Portal:
 2.  <a href="https://data.cityofchicago.org/Education/Chicago-Public-Schools-Progress-Report-Cards-2011-/9xs2-f89t?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDB0201ENSkillsNetwork20127838-2021-01-01">Chicago Public Schools</a>
 3.  <a href="https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDB0201ENSkillsNetwork20127838-2021-01-01">Chicago Crime Data</a>
 
-### 1. Socioeconomic Indicators in Chicago
+## Analysis:
 
-This dataset contains a selection of six socioeconomic indicators of public health significance and a “hardship index,” for each Chicago community area, for the years 2008 – 2012.
+Total Number of Crimes:
+The dataset contains a total of 533 recorded crimes.
 
-A detailed description of this dataset and the original dataset can be obtained from the Chicago Data Portal at:
-[https://data.cityofchicago.org/Health-Human-Services/Census-Data-Selected-socioeconomic-indicators-in-C/kn9c-c2s2](https://data.cityofchicago.org/Health-Human-Services/Census-Data-Selected-socioeconomic-indicators-in-C/kn9c-c2s2?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDB0201ENSkillsNetwork20127838-2021-01-01&cm_mmc=Email_Newsletter-_-Developer_Ed%2BTech-_-WW_WW-_-SkillsNetwork-Courses-IBMDeveloperSkillsNetwork-DB0201EN-SkillsNetwork-20127838&cm_mmca1=000026UJ&cm_mmca2=10006555&cm_mmca3=M12345678&cvosrc=email.Newsletter.M12345678&cvo_campaign=000026UJ)
+Community Areas with Per Capita Income Less Than $11,000:
+Four community areas in Chicago have a per capita income of less than $11,000. These areas are West Garfield Park, South Lawndale, Fuller Park, and Riverdale.
 
-### 2. Chicago Public Schools
+Crimes Involving Minors:
+Two case numbers were found for crimes involving minors, identified through the presence of the keyword "MINOR" in the crime description.
 
-This dataset shows all school level performance data used to create CPS School Report Cards for the 2011-2012 school year. This dataset is provided by the city of Chicago's Data Portal.
+Kidnapping Crimes Involving a Child:
+One kidnapping crime involving a child was recorded. The case number is HN144152, which occurred on January 26, 2007, at 050XX W VAN BUREN ST.
 
-A detailed description of this dataset and the original dataset can be obtained from the Chicago Data Portal at:
-[https://data.cityofchicago.org/Education/Chicago-Public-Schools-Progress-Report-Cards-2011-/9xs2-f89t](https://data.cityofchicago.org/Education/Chicago-Public-Schools-Progress-Report-Cards-2011-/9xs2-f89t?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDB0201ENSkillsNetwork20127838-2021-01-01&cm_mmc=Email_Newsletter-_-Developer_Ed%2BTech-_-WW_WW-_-SkillsNetwork-Courses-IBMDeveloperSkillsNetwork-DB0201EN-SkillsNetwork-20127838&cm_mmca1=000026UJ&cm_mmca2=10006555&cm_mmca3=M12345678&cvosrc=email.Newsletter.M12345678&cvo_campaign=000026UJ)
+Types of Crimes Recorded at Schools:
+Several types of crimes were recorded at schools, including battery, criminal damage, narcotics, assault, criminal trespass, and public peace violations.
 
-### 3. Chicago Crime Data
+Average Safety Score for Each Type of School:
+The average safety scores for different types of schools are as follows:
 
-This dataset reflects reported incidents of crime (with the exception of murders where data exists for each victim) that occurred in the City of Chicago from 2001 to present, minus the most recent seven days.
+Elementary Schools: 49.52
+High Schools: 49.62
+Middle Schools: 48.00
+Community Areas with the Highest Percentage of Households Below Poverty Line:
+The top five community areas with the highest percentage of households below the poverty line are Riverdale (56.5%), Fuller Park (51.2%), Englewood (46.6%), North Lawndale (43.1%), and East Garfield Park (42.4%).
 
-A detailed description of this dataset and the original dataset can be obtained from the Chicago Data Portal at:
-[https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDB0201ENSkillsNetwork20127838-2021-01-01&cm_mmc=Email_Newsletter-_-Developer_Ed%2BTech-_-WW_WW-_-SkillsNetwork-Courses-IBMDeveloperSkillsNetwork-DB0201EN-SkillsNetwork-20127838&cm_mmca1=000026UJ&cm_mmca2=10006555&cm_mmca3=M12345678&cvosrc=email.Newsletter.M12345678&cvo_campaign=000026UJ)
+Most Crime-Prone Community Area:
+The community area "Austin" has the highest number of recorded crimes, with a total of 43 incidents.
+
+Community Area with the Highest Hardship Index:
+The community area "Riverdale" has the highest hardship index.
+
+Community Area with the Most Number of Crimes:
+The community area "Austin" has the most number of recorded crimes, with a total of 43 incidents.
+
+## Conclusion:
+The analysis of the Chicago crime data provides valuable insights into crime patterns, demographics, and school safety in different community areas. It highlights areas with higher crime rates, lower per capita income, and higher rates of poverty. Additionally, it identifies the types of crimes commonly recorded at schools and compares the safety scores of different school types. Law enforcement agencies, policymakers, and educators can use this information to implement targeted interventions and allocate resources effectively to improve safety and living conditions in Chicago's communities.
