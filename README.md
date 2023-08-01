@@ -3,8 +3,7 @@
 ## Introduction:
 In this report, I analyze the Chicago crime data stored in a SQLite database. The dataset includes information about crimes recorded in Chicago, census data, and public schools. The analysis aims to provide insights into crime patterns, demographics, and school safety in different community areas of Chicago.
 
-## Understand the datasets:
-
+## Datasets:
 Using three datasets that are available on the city of Chicago's Data Portal:
 
 1.  <a href="https://data.cityofchicago.org/Health-Human-Services/Census-Data-Selected-socioeconomic-indicators-in-C/kn9c-c2s2?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDB0201ENSkillsNetwork20127838-2021-01-01">Socioeconomic Indicators in Chicago</a>
